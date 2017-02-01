@@ -19,7 +19,8 @@ public class Notas {
             try{
                 notas[i] = Integer.parseInt(JOptionPane.showInputDialog("Introduce nota del alumno nº " + (i+1)));
             }catch(Exception ex){
-                System.out.println("Valor invalido.");
+                System.out.println("Valor invalido detectado.\nDeteniendo resto del programa.");
+                break;
             }
         }
     }
